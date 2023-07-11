@@ -92,3 +92,61 @@ d.Stateless components as they do not need to manage state and store data. -->
 
 Routing Implementation?
 What is lazy loading in react?
+
+
+
+<!-- Difference between Axios and fetch?
+Axios:-a.Axios has url in request object.
+b.Axios uses the data property.
+c.Axios allows cancelling request and request timeout.
+d.Axios has wide browser support.
+e.Axios’ data contains the object.
+fetch:-a.Fetch has no url in request object.
+b.Fetch uses the body property.
+c.Fetch does not.
+d.Fetch only supports Chrome 42+, Firefox 39+, Edge 14+, and Safari 10.1+ (This is known as Backward Compatibility).
+e.Fetch’s body has to be stringified. -->
+
+<!-- What is UseState Hook ?(Implementation)?
+a.useState is React Hook that allows you to add state to a functional component.
+b.useState accepts an initial state and returns two values:
+1.The current state.
+2.A function that updates the state.
+Implementation:- a.we can import {usestate} from React
+b.const[state,setstate]=usestate("")
+c.state having a current value of usestate.
+d.we can render value use setstate to render value of document -->
+
+<!-- What is useEffect Hook ?(Implementation)?
+a.The useEffect Hook allows you to perform side effects in your components.
+b.useEffect accepts two arguments. The second argument is optional.
+1.<function>
+    2.<dependency>
+        Implementation:-a.we can import {useEffect} from react.
+        b.In useEffect the component cannot rerender.Component can we render only onne time
+        useEffect(()=>{
+
+        },[0]) -->
+
+<!-- What is UseReducer Hook ?(Implementation)?
+a.UseReducer is similar to to usestate hook.
+b.it is very usefull.
+c.It allows for custom state logic.
+d.it is used in place of usestate for multiple time or complex logic
+Implementation:-a.Usereducer hook accept two argument.
+1.reducer
+2.initialState
+b.impot {usereducer} from react.
+c.const [data, dispatch] = useReducer(reducer, initstate);
+we can write this function name(take some value){
+let action={}
+}
+d.usereducer having dispatch also in dispatch they take action value.
+e.the reducer take value of two argument(currstate.,action){
+
+} -->
+
+<!-- What is UseMemo Hook ?(Implementation)?
+a.The React useMemo Hook returns a memoized value.
+b.The useMemo Hook only runs when one of its dependencies update.
+Implementation:-a.import {useMemo} from react. -->
